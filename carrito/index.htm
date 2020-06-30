@@ -261,44 +261,7 @@
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 </html>
-
-<!--
-    //Variables
-const carrito = document.getElementById('carrito');
-const cursos = document.getElementById('lista-cursos');
-
-//Listeners
-cargarEventListeners();
-
-function cargarEventListeners(){
-    //Se ejecuta cuando presionas "Agregar al carrito";
-    cursos.addEventListener('click', comprarCurso)
-
-}
-
-//Funciones
-
-//Funcion que anade el curso al carrito
-function comprarCurso(e){
-    e.preventDefault();
-
-    if(e.target.classList.contains('agregar-carrito')){
-        //Delegation para seleccionar solo el boton de agregar al carrito.
-        const curso = e.target.parentElement.parentElement;
-        
-        //Obtencion de la informacion del curso seleccionado
-        leerDatosDelCurso(curso);
-
-    }
-}
-
-//lee los datos del curso
-
-function leerDatosDelCurso(curso){
-    console.log(curso);
-}
--->
